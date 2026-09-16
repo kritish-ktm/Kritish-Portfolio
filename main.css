@@ -1029,8 +1029,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: -75px auto 25px auto;
-  border: 6px solid var(--background-color);
+  margin: 0 auto 25px auto;
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .service-detail .intro-icon i {
