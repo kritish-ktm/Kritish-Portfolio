@@ -921,3 +921,310 @@ h1, h2, h3, h4, h5, h6 {
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
+/* ==========================================================
+   Services Section (Services hub + per-service pages)
+   ========================================================== */
+.services .service-card {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 8px;
+  padding: 35px 25px;
+  height: 100%;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+}
+
+.services .service-card:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-6px);
+}
+
+.services .service-card .icon-wrap {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services .service-card .icon-wrap i {
+  font-size: 32px;
+  color: var(--accent-color);
+}
+
+.services .service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.services .service-card p {
+  font-size: 14.5px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 18px;
+  min-height: 66px;
+}
+
+.services .service-card .price-from {
+  display: block;
+  font-size: 15px;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-family: var(--heading-font);
+  margin-bottom: 18px;
+}
+
+.services .service-card .price-from small {
+  display: block;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-service {
+  display: inline-block;
+  padding: 9px 26px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-service:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.btn-service-solid {
+  display: inline-block;
+  padding: 12px 34px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-service-solid:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+/* Service detail intro */
+.service-detail .intro-icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -75px auto 25px auto;
+  border: 6px solid var(--background-color);
+}
+
+.service-detail .intro-icon i {
+  font-size: 38px;
+  color: var(--accent-color);
+}
+
+.service-detail .service-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-detail .service-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 15px;
+}
+
+.service-detail .service-highlights li i {
+  color: var(--accent-color);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* Pricing table */
+.pricing-wrap {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 8px;
+  padding: 10px 25px;
+  overflow-x: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 16px 10px;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  text-align: left;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table th {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-family: var(--nav-font);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+.pricing-table td.item-name {
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.pricing-table td.item-desc {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-top: 2px;
+}
+
+.pricing-table td.price {
+  color: var(--accent-color);
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.pricing-table tr:hover {
+  background: color-mix(in srgb, var(--default-color), transparent 96%);
+}
+
+.pricing-note {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-top: 14px;
+}
+
+/* Package / plan cards */
+.package-card {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 8px;
+  padding: 35px 30px;
+  height: 100%;
+  position: relative;
+  transition: 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+}
+
+.package-card.popular {
+  border-color: var(--accent-color);
+}
+
+.package-card .badge-popular {
+  position: absolute;
+  top: -13px;
+  right: 25px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 5px 16px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.package-card h4 {
+  font-size: 19px;
+  margin-bottom: 4px;
+}
+
+.package-card .package-tag {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  margin-bottom: 18px;
+  display: block;
+}
+
+.package-card .package-price {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--heading-font);
+  color: var(--accent-color);
+  margin: 0 0 20px 0;
+}
+
+.package-card .package-price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.package-card ul li {
+  padding: 6px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  border-bottom: 1px dashed color-mix(in srgb, var(--default-color), transparent 92%);
+}
+
+.package-card ul li:last-child {
+  border-bottom: none;
+}
+
+.package-card ul li i {
+  color: var(--accent-color);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* CTA banner reused across service pages */
+.service-cta {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 8px;
+  padding: 45px 30px;
+  text-align: center;
+}
+
+.service-cta h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.service-cta p {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 22px;
+}
